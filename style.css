@@ -1,0 +1,122 @@
+:root {
+  --primary-blue: #ff0000;
+  --primary-yellow: #427240;
+  --primary-green: #28a745;
+  --primary-red: #dc3545;
+  --bg-dark: #0f0f1a;
+  --card-bg: rgba(28, 28, 46, 0.8);
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: var(--bg-dark);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.logo-container {
+  max-width: 300px;
+  margin: 0 auto 20px;
+  filter: drop-shadow(0 0 15px rgba(78, 154, 241, 0.3));
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #b0b0b0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-left: 5px solid var(--primary-blue);
+  padding-left: 15px;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.member {
+  background: #22223a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+/* Brand colors for team cards */
+.member:nth-child(1) { border-color: var(--primary-blue); }
+.member:nth-child(2) { border-color: var(--primary-yellow); }
+.member:nth-child(3) { border-color: var(--primary-green); }
+.member:nth-child(4) { border-color: var(--primary-red); }
+.member:nth-child(5) { border-color: var(--primary-blue); }
+.member:nth-child(6) { border-color: var(--primary-yellow); }
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+.highlight {
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #7abaff;
+  text-decoration: underline;
+}
+
+.socials p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #08080e;
+  color: #555;
+  font-size: 0.9em;
+  border-top: 1px solid #1a1a2e;
+}
