@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   background: var(--bg-dark);
   color: #ffffff;
   line-height: 1.6;
